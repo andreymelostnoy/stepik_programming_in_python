@@ -1,14 +1,14 @@
 a = [int(i) for i in input().split()]
+a.sort()
+pre_result = []
 result = ""
 
-if len(a) == 1:
-    result = result + str(a[0])
-else:
-    iteration = 0
-    for x in a:
-        if iteration == (len(a) - 1):
-            result = result + str((a[iteration - 1] + a[0]))
-        else:
-            result = result + str((a[iteration - 1] + a[iteration + 1])) + " "
-        iteration += 1
+for i in a:
+    if (a.count(i) > 1) and i not in pre_result:
+        a.remove(i)
+        pre_result.append(i)
+
+for element in pre_result:
+        result = result + str(element) + " "
+
 print(result)
