@@ -56,4 +56,14 @@
 #         else:
 #             print(a[i][j], end="")
 #     print()
+#
+#
+#
+# kek = "1 2 2 3 3 3 4 4 4 4 5 5 5 5 5 6 6 6 6 6 6 7 7 7 7 7 7 7 8 8 8 8 8 8 8 8 9 9 9 9 9 9 9 9 9 10 10".split()
+# print(kek)
+# index_kek = 0
+# for i in kek:
+#     index_kek += 1
+#
+# print(index_kek)
 
