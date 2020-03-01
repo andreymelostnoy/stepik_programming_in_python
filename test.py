@@ -67,7 +67,6 @@
 #
 # print(index_kek)
 
-def f(n):
-    return n * 10 + 5
+genome = "agagagagagggcgscagcgagcagca"
 
-print(f(f(f(10))))
+print(genome.count('a'))
