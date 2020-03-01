@@ -67,24 +67,15 @@
 #
 # print(index_kek)
 
-genome = str(input())
-result = ""
-count = 0
-
-for i in range(len(genome)):
-    if i == (len(genome) - 1):
-        if genome[i] == genome[i - 1]:
-            count += 1
-            result += (str(genome[i]) + str(count))
-        else:
-            count += 1
-            result += (str(genome[i]) + str(count))
-    else:
-        if genome[i] == genome[i + 1]:
-            count += 1
-        else:
-            count += 1
-            result += (str(genome[i]) + str(count))
-            count = 0
-
-print(result)
+c = []
+while True:
+    a = [i for i in input().split()]
+    if a == ['end']:
+        break
+    c.append(a)
+n, m = len(c), len(c[0])
+for i in range(n):
+    for j in range(m):
+        x = int(c[i][j-1]) + int(c[i][j+1-m]) + int(c[i-1][j]) + int(c[i+1-n][j])
+        print(x, end=' ')
+    print()
