@@ -69,11 +69,12 @@
 #
 # string = "Я к вам пишу - чего же боле? Что я могу еще сказать?"
 # print(len(string) * 16)
+#
+# import math
+#
+# r = float(input())
+#
+# l = 2 * math.pi * r
+#
+# print(l)
 
-import math
-
-r = float(input())
-
-l = 2 * math.pi * r
-
-print(l)
